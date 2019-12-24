@@ -9,13 +9,14 @@ class VideoPlayer extends Component {
 
 
     render() {
-        const videoUrl ="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        const videoUrl ="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
         const imageSrc ="./images/Fast_large.jpg"
         return (
             <div className="videoPlayer">
                 <ReactPlayer 
-                url={this.props.videoUrl}
-                controlsplaying={false}
+                url={videoUrl}
+                controls
+                playing={false}
                 width="100%"
                 height="100%"
                 style={{position :"ablosute", top:"0", left:"0"}}
